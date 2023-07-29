@@ -1,4 +1,4 @@
-
+  import Link from "next/link"
 
 const NavBar = () =>{
     return(
@@ -20,12 +20,11 @@ const NavBar = () =>{
               <nav aria-label="Global" className="hidden md:block">
                 <ul className="flex items-center gap-6 text-sm">
                   <li>
-                    <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="/"
-                    >
-                      Project
-                    </a>
+                  <Link href="/project">
+                      <p className="text-gray-500 transition hover:text-gray-500/75">
+                        Project
+                      </p>
+                    </Link>
                   </li>
       
                   <li>
